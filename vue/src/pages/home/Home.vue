@@ -84,7 +84,7 @@
       getGoods () {
         this.$http({
           method: 'GET',
-          url: '/goods/',
+          url: 'api/goods/',
           timeout: 5000
         }).then((res) => {
           this.goodsIdArr = [];
@@ -101,7 +101,7 @@
         if(this.delNumber !== -1){
           this.$http({
             method: 'DELETE',
-            url: '/goods/'+ this.delNumber,
+            url: 'api/goods/'+ this.delNumber,
             timeout: 5000
           }).then((res) => {
             if(res.data.code ==0 ){

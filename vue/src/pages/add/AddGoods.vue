@@ -48,7 +48,7 @@
     },
     methods: {
       add() {
-        this.$http.post('/goods/',{
+        this.$http.post('api/goods/',{
           "price": this.addGoodsMsg.price,
           "title": this.addGoodsMsg.title,
           "img": this.addGoodsMsg.img

@@ -30,7 +30,7 @@
 
       this.$http({
           method: 'GET',
-          url: '/goods/',
+          url: 'api/goods/',
           params: {
             "id": goodsId
           },

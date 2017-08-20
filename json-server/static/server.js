@@ -14,7 +14,7 @@ server.use(jsonServer.bodyParser);
 server.use(middlewares);
 
 server.use((req, res, next) => {
-  res.header('X-Hello', 'World');
+  res.header('X-Hello', 'datura_lj');
   next();
 })
 router.render = (req, res) => {
